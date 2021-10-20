@@ -3,20 +3,26 @@
 \docType{data}
 \name{key_crop_yields}
 \alias{key_crop_yields}
-\title{Title}
+\title{Our World in Data's Key Crop Yields}
 \format{
-A data frame with 53940 rows and 10 variables:
+A tibble with 143825 observations and 5 variables:
 \describe{
-\item{price}{price, in US dollars}
-\item{carat}{weight of the diamond, in carats}
-...
+\item{entity}{full country name}
+\item{code}{three letter country code}
+\item{year}{year from 1961 to 2018}
+\item{crop}{one of bananas, barley, beans, cassava, cocoa, maize, peas, potatoes, rice, soybeans, wheat}
+\item{tonnes_per_hectare}{the total yield of the crop, measured in tonnes per hectare}
 }
+}
+\source{
+\href{https://ourworldindata.org/crop-yields}{Our World in Data}  and \href{https://github.com/rfordatascience/tidytuesday/blob/master/data/2020/2020-09-01/readme.md}{Tidy Tuesday}
 }
 \usage{
 key_crop_yields
 }
 \description{
-Title
+A dataset containing crop yields for countries over time. Yields
+are measured in tonnes per hectare for seven crops.
 }
 \section{Background}{
 
